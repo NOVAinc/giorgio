@@ -29,6 +29,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    min-height: 300px;
 }
 
 h1, h2 {
@@ -46,7 +47,8 @@ h1, h2 {
 }
 
 #title {
-    margin-bottom: 35px;
+    font-size: clamp(32px, 8vmin, 72px);
+    margin-bottom: 0.75em;
 }
 
 #portfolio, #identity {
@@ -55,7 +57,15 @@ h1, h2 {
     align-content: center;
 }
 
-@media (max-width: 600px) {
+h2 {
+    font-size: clamp(24px, 6vmin, 64px);
+}
+
+p {
+    font-size: clamp(16px, 4vmin, 24px);
+}
+
+@media (max-width: 640px) {
     body {
         background: #111;
     }
